@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="remises-real.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title></title>
+</head>
+<body>
+
+<div class="navbar">
+    
+    <div class="tobias">
+        <a href="index.html"><h2 class="tobi">Tobias Retamar</h2></a>
+    </div>
+    
+    
+    <ul class="links">
+        <li id="#active"><a class="hvr-pulse-grow" href="index.html">Proyectos</a></li>
+        <li><a class="hvr-pulse-grow" href="about.html">Sobre mi</a></li>
+        <li><a class="hvr-pulse-grow" href="mailto:tobiasgerman19@@gmail.com">Contacto</a></li>
+    </ul>
+    
+
+    <div class="toggle">
+        <div class="linea1"></div>
+        <div class="linea2"></div>
+        <div class="linea3"></div>
+    </div>
+    
+    
+</div>
+
+<center> <h2 class="preview"><b>🚧 [En proceso] 🚧 </b><br> Case Study: Rediseño de Sitio Web para Remises Real </h2></center>
+<center> <p class="mi-rol">👨‍💻 Mi rol: Diseñador UI/UX, Desarrollador Web, Diseñador Visual </p></center>
+<center> <p class="herramientas"> 
+🛠️ Herramientas: Figma, VS Code, Photoshop CS6</p></center>
+<center> <p class="date"> 
+📅 Fecha estimada de finalización: NOV 2022</p></center>
+
+
+
+
+
+
+<br>
+<br>
+
+<main>
+  <center>
+
+
+
+  <center><h1  class="titul0">[Prototipo 1: Versión de escritorio]</h1></center>
+  <img class="project-desktop" src="desktop-version.png" alt="placeholder+image"></center>
+
+
+  <center>
+  <center><h1 class="titul0">[Prototipo 2: Versión mobile
+  responsive]</h1></center>
+  <img class="project-mobile" src="phone-version.png" alt="placeholder+image"></center>
+
+
+
+
+
+</main>
+
+
+<script type="text/javascript">const navbar = document.querySelector('.navbar');
+
+navbar.querySelector('.toggle').addEventListener('click', () => {
+
+  navbar.classList.toggle('collapsed');
+
+});
+
+
+
+window.addEventListener('scroll', e => {
+
+  let windowY = window.pageYOffset;
+
+  let navbarHeight = document.querySelector('.navbar').offsetHeight;
+
+  if (windowY > navbarHeight) navbar.classList.add('sticky');else
+  navbar.classList.remove('sticky');
+
+
+
+
+});</script>
+
+<script type="text/javascript">let glowInTexts = document.querySelectorAll(".glowIn");
+glowInTexts.forEach(glowInText => {
+  let letters = glowInText.textContent.split("");
+  glowInText.textContent = "";
+  letters.forEach((letter, i) => {
+    let span = document.createElement("h1");
+    span.textContent = letter;
+    span.style.animationDelay = `${i * 0.09}s`;
+    glowInText.append(span);
+  });
+});
+</script>
+
+
+</body>
+</html>

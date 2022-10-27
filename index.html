@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title></title>
+</head>
+<body>
+
+<div class="navbar">
+    
+    <div class="tobias">
+        <a href="index.html"><h2 class="hvr-pulse-grow  ">Tobias Retamar</h2></a>
+    </div>
+    
+    
+    <ul class="links">
+        <li id="#active"><a class="hvr-pulse-grow" href="index.html">Proyectos</a></li>
+        <li><a class="hvr-pulse-grow" href="about.html">Sobre mi</a></li>
+        <li><a class="hvr-pulse-grow" href="mailto:tobiasgerman19@@gmail.com">Contacto</a></li>
+    </ul>
+    
+
+    <div class="toggle">
+        <div class="linea1"></div>
+        <div class="linea2"></div>
+        <div class="linea3"></div>
+    </div>
+    
+    
+</div>
+
+
+<main>
+
+ 
+  <a href="remises-real.html">
+  <section class="section">
+    <figure>
+      <img class="remises-real" src="remisesreal.png">
+    </figure>
+    <article>
+        <span style="color: grey" class="project-date">Oct 2022 - en proceso</span>
+        <br>
+      <span class="desarrollo" >UI/UX Desarrollo Web</span>
+
+      <h1>Case study: Rediseño de sitio web para Remises Real [Preview]</h1>
+    </article>
+  </section></a>
+
+    <a href="https://killmilord.netlify.app" target="_blank">
+  <section class="section">
+    <figure>
+      <img  class="killmilord" src="killmilord.png">
+    </figure>
+    <article>
+         <span style="color: grey" class="project-date">OCT 2022</span>
+         <br>
+      <span class="desarrollo" >Desarrollo Web</span>
+      <h1>Sitio Web para Killmilord</h1>
+    </article>
+  </section></a>
+
+
+  <a href="https://crackfest.netlify.app" target="_blank">
+  <section class="section">
+    <figure>
+      <img class="crackfest" src="crackfest.png" >
+    </figure>
+    <article>
+         <span style="color: grey" class="project-date">SEP 2022</span>
+         <br>
+      <span class="desarrollo" >Desarrollo Web</span>
+      <h1>Sitio Web para Crackfest</h1>
+    </article>
+  </section></a>
+
+
+
+ 
+  
+</main>
+
+
+<script type="text/javascript">const navbar = document.querySelector('.navbar');
+
+navbar.querySelector('.toggle').addEventListener('click', () => {
+
+  navbar.classList.toggle('collapsed');
+
+});
+
+
+
+window.addEventListener('scroll', e => {
+
+  let windowY = window.pageYOffset;
+
+  let navbarHeight = document.querySelector('.navbar').offsetHeight;
+
+  if (windowY > navbarHeight) navbar.classList.add('sticky');else
+  navbar.classList.remove('sticky');
+
+
+
+
+});</script>
+
+<script type="text/javascript">let glowInTexts = document.querySelectorAll(".glowIn");
+glowInTexts.forEach(glowInText => {
+  let letters = glowInText.textContent.split("");
+  glowInText.textContent = "";
+  letters.forEach((letter, i) => {
+    let span = document.createElement("h1");
+    span.textContent = letter;
+    span.style.animationDelay = `${i * 0.09}s`;
+    glowInText.append(span);
+  });
+});
+</script>
+
+
+</body>
+</html>
