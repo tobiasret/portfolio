@@ -6,6 +6,15 @@ body, button, input {
   font-family: inter;
 }
 
+body {
+    -ms-overflow-style: none; 
+    scrollbar-width: none; 
+}
+body::-webkit-scrollbar { 
+    display: none; 
+}
+
+
 * {
   box-sizing: border-box;
   transition: 0.4s ease all;
@@ -399,6 +408,11 @@ a, .logo-tobias {
     opacity: 1.7;
   }
 
+}
 
+}
 
+a, .logo-tobias {
+  color: #d4d4d4 !important;
+}
 }
