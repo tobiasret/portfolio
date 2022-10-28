@@ -44,6 +44,8 @@ ul {
   align-items: center;
   top: 0px;
   text-transform: uppercase;
+     cursor: default;
+ 
 }
 
 
@@ -322,7 +324,7 @@ span{
 
 
 .navbar #active {
-  cursor: pointer;
+  cursor: default;
   font-family: inter;
   
 }
@@ -334,7 +336,7 @@ a {
 @media (min-width:961px)  { 
 
 .navbar .tobias {
-  cursor: pointer;
+  cursor: default;
   font-family: inter;
   margin-left: 10em;
 }
